@@ -1,0 +1,39 @@
+{
+    "name": "Instagram Data Extractor",
+    "version": "0.1.0",
+    "description": "Extracting profiles data from Instagram",
+    "permissions": ["storage", "tabs","activeTab","scripting"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["https://*.instagram.com/*"],
+        "js": ["contentScript.js"]
+      }
+    ],
+    "host_permissions": [
+      "https://*.instagram.com/*"
+  ],
+    "web_accessible_resources": [
+      {
+        "resources": [
+          "assets/bookmark.png",
+          "assets/play.png",
+          "assets/delete.png",
+          "assets/save.png"
+        ],
+        "matches": ["https://*.instagram.com/*"]
+      }
+    ],
+    "action": {
+      "default_icon": {
+        "16": "assets/instagram.png",
+        "24": "assets/instagram.png",
+        "32": "assets/instagram.png"
+      },
+      "default_title": "Instagram Data Extractor",
+      "default_popup": "popup.html"
+    },
+    "manifest_version": 3
+}

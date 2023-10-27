@@ -1,0 +1,98 @@
+
+/* popup.css */
+
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the container */
+.container {
+  width: 500px;
+  text-align: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+/* Style the title */
+.title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Style the inner container */
+.container_inner {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: left;
+}
+
+/* Style the input_div and labels */
+.input_div {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+input[type="checkbox"] {
+margin-right: 5px;
+}
+
+/* Style the checkbox labels */
+label {
+  display: block;
+  margin-top: 5px;
+}
+
+/* Style the "Run" button */
+#btn {
+  background-color: #0077b5;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#btn:hover {
+  background-color: #005f99;
+}
+
+/* Style the bookmarks container */
+#bookmarks {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.checkboxes{
+  display: grid;
+
+grid-template-columns: 1fr 1fr 1fr;
+}
+.single_checkbox{
+  display: flex;
+  align-items: center;
+}
+.btn_container{
+  display: flex;
+  justify-content: end;
+}

@@ -1,0 +1,125 @@
+/* popup.css */
+
+/* Reset default margin and padding */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@keyframes my-animation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style the container */
+.container {
+  font-family: 'Montserrat';
+  width: 400px;
+  text-align: center;
+  background:  white;
+  padding: 20px;
+ 
+}
+
+/* Style the title */
+
+
+/* Style the inner container */
+.container_inner {
+  background-color: #e119d7;
+  padding: 20px;
+ 
+  border-radius: 5px;
+  text-align: left;
+  animation: my-animation 1s ease-in-out 1;
+}
+
+/* Style the input_div and labels */
+.input_div {
+  margin-bottom: 15px;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+  margin-top: 5px;
+  outline: none;
+
+}
+input[type="checkbox"] {
+margin-right: 5px;
+}
+
+/* Style the checkbox labels */
+label {
+  display: block;
+  margin-top: 5px;
+  color: white;
+}
+
+.img{
+  object-fit: contain;
+  width: 300px;
+}
+/* Style the "Run" button */
+#btn {
+ 
+ 
+  padding: 10px 20px;
+  border: black 1px;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+ margin-top: 10px;
+ width: 100%;
+  transition: background-color 0.5s ease-in-out;
+  background-color: rgb(0, 95, 153);
+  color: white;
+}
+
+#btn:hover {
+  background-color: rgb(0, 95, 153);
+
+  
+}
+
+/* Style the bookmarks container */
+#bookmarks {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.checkboxes{
+  display: grid;
+  
+
+grid-template-columns: 1fr 1fr 1fr;
+}
+.single_checkbox{
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+.btn_container{
+  display: flex;
+  justify-content: end;
+}

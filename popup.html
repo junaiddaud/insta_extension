@@ -1,0 +1,46 @@
+<link href="popup.css" rel="stylesheet" type="text/css" />
+<script type="module" src="popup.js"></script>
+
+<div  class="container">
+  <div class="title">
+    <img class="img" src="./assets/Scrapper.png" alt="logo"/>
+  </div>
+  <p style="color: rgb(234, 60, 60);font-size: large; font-weight: bold;" id="error"></p>
+  <div class="container_inner">
+  
+   <div class="input_div">
+    <label class="label" for="input">Profile Path</label>
+    <input  type="text" id="path" placeholder="Eg:https://www.instagram.com/[user-name]" />
+   
+   </div>
+   <div  class="input_div">
+    <label class="label"  for="input">No of Posts</label>
+    <input  type="number" id="posts" placeholder="No of Posts"/>
+   
+   
+   </div>
+   <div  class="input_div">
+    <label class="label" for="input">Type of Posts</label>
+    <div class="checkboxes">
+
+<label class="single_checkbox" for="checbox"> <input type="checkbox" id="img"  />Image
+ 
+</label>
+
+<label class="single_checkbox"for="checbox"> <input type="checkbox"  id="vid" />Video
+ 
+</label>
+
+    </div>
+   
+   
+   </div>
+  
+  
+
+   
+  </div>
+  <div class="btn_container">
+    <button id="btn" >Run</button>
+   </div>
+</div>
